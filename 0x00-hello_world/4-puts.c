@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * Write a C program that prints this.
- * my sweet code
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
