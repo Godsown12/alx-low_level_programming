@@ -1,17 +1,18 @@
+
+
 #include <stdio.h>
 /**
- * main - Chaning to capitals letters
+ * main - prints the lowercase alphabet in reverse
  * Return: 0
  */
+
 int main(void)
 
 {
 
-	 /* start the vawulence */
-
 	char alph;
 
-	for (alph = 'a'; alph <= 'z'; alph++)
+	for (alph = 'z'; alph >= 'a'; alph--)
 
 		putchar(alph);
 
