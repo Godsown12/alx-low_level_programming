@@ -14,7 +14,7 @@ int main(void)
 
 		putchar(nums);
 
-	putchar((nums % 10) + '0');
+	putchar('\n');
 
 	return (0);
 
