@@ -1,0 +1,19 @@
+#include "main.h"
+/**
+ * print_number - display number
+ * @n:. variable of the input
+ */
+void print_number(int n)
+{
+	unsigned int i = n;
+
+	if (n < 0)
+	{
+		i = -i;
+	}
+	if (i / 10)
+	{
+		print_number(i / 10);
+	}
+	_putchar(i % 10 + '0');
+}
