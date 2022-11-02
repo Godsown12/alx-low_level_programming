@@ -23,3 +23,4 @@ int i;
 		} while (haystack[i] == needle[i]);
 	}
 	return ('\0');
+}
