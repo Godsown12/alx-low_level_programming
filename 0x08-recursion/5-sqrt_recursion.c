@@ -1,28 +1,28 @@
 #include "main.h"
-#include <stdio.h>
-#include <math.h>
+
+/**
+ * validation - validates number
+ * @i:int
+ * @j:int
+ * Return: int
+ */
+int validation(int i, int j)
+{
+	if (i * i == j)
+		return (i);
+	if (i * i > j)
+		return (-1);
+	return (check(i + 1, j));
+}
 /**
  * _sqrt_recursion - function that returns the
  * square root of a number.
  * @n: base
- * Return: n,-1,1.
+ * Return: n,1.
  */
-
 int _sqrt_recursion(int n)
 {
-	int q = 0;
-
-	if (n < 0)
-	{
-		return (-1);
-	}
-	if (n == 1)
-	{
-		return (1);
-	}
-	else if (n > 0)
-	{
-		n = _sqrt_recursion(n);
-	}
-	return (n);
+	if (n == 0)
+		return (0);
+	return (validation(1, n));
 }
