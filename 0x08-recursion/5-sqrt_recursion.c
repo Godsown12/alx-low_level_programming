@@ -12,7 +12,7 @@ int validation(int i, int j)
 		return (i);
 	if (i * i > j)
 		return (-1);
-	return (check(i + 1, j));
+	return (validation(i + 1, j));
 }
 /**
  * _sqrt_recursion - function that returns the
